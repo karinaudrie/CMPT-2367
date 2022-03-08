@@ -1,0 +1,8 @@
+index.html
+cupcakes.html
+cart.html
+specific-cupcakes.html
+contact-us.html
+faq.html
+billing.html
+shipping.html
