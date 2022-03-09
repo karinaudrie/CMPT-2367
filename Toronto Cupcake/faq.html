@@ -1,175 +1,161 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>TEMPLATE</title>
-    <style media="screen">
-      .header {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        z-index: 1;
-      }
 
-      .banner {
-        background: #FF7171;
-      }
+<head>
+  <meta charset="utf-8">
+  <title>FAQs - Toronto Cupcake</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+  .spacer {
+    height: 155px;
+  }
+    .accordion {
+      background-color: #F0E4D7;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
 
-      .banner-text {
-        flex-grow: 1;
-        line-height: 1.4;
-        text-align: left;
-      }
+    .active,
+    .accordion:hover {
+      background-color: #F5C0C0;
+    }
 
-      .logo {
-        padding: 15px;
-        background-color: #F0E4D7;
-      }
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+    }
+  </style>
+</head>
 
-      .logo h1 {
-        display: inline;
-        margin-left: 30px;
-        vertical-align: middle;
-      }
-
-      .logo a img {
-        align: right;
-      }
-
-      .menu-bar {
-        overflow: hidden;
-        background-color: #F5C0C0;
-      }
-
-      .menu-bar a {
-        float: left;
-        font-size: 16px;
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-
-      .spacer {
-        width: 100%;
-        height: 55px;
-      }
-
-      * {
-        box-sizing: border-box
-      }
-
-      img {
-        vertical-align: middle;
-      }
-
-      .dropdown {
-        float: left;
-        overflow: hidden;
-      }
-
-      .dropdown .dropbtn {
-        font-size: 16px;
-        border: none;
-        outline: none;
-        color: black;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
-      }
-
-      .menu-bar a:hover,
-      .dropdown:hover .dropbtn {
-        background-color: #FF7171;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #F0E4D7;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-      }
-
-      .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-      }
-
-      .dropdown-content a:hover {
-        background-color: #F5C0C0;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-    </style>
-  </head>
-  <body>
-    <!--Header-->
-    <!--COVID-19 Banner, Logo and Website Title, Menu Bar-->
-    <div class="header">
-      <div class="banner">
-        <div class="banner-text">
-          <table cellspacing="10px">
-            <tr>
-              <td><img src="images/warning-sign.svg" alt="warning-sign" width="20px"></td>
-              <td>
-                <div style="text-align: left">
-                  <a href="covid.html"><strong> COVID-19 PROTOCOLS AND INFORMATION</strong></a>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
+<body>
+  <!--Header-->
+  <!--COVID-19 Banner, Logo and Website Title, Menu Bar-->
+  <div class="header">
+    <div class="banner">
+      <div class="banner-text">
+        <table cellspacing="10px">
+          <tr>
+            <td><img src="images/warning-sign.svg" alt="warning-sign" width="20px"></td>
+            <td>
+              <div style="text-align: left">
+                <a href="covid.html"><strong> COVID-19 PROTOCOLS AND INFORMATION</strong></a>
+              </div>
+            </td>
+          </tr>
+        </table>
       </div>
-
-      <div class="logo">
-        <img src="images/logo.svg" alt="Logo" width="45px" display="inline">
-        <h1>Toronto Cupcake</h1>
-        <a href="cart.html"><img src="images/cart.svg" alt="cart" width="30px" align="right"></a>
-      </div>
-
-
-      <div class="menu-bar">
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-          <button class="dropbtn">About
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="about-us.html">About Us</a>
-            <a href="faq.html">FAQs</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">Cupcakes
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="cupcakes.html">Always Available</a>
-            <a href="custom.html">Custom</a>
-            <a href="events.html">Event</a>
-          </div>
-        </div>
-        <a href="contact-us.html">Contact Us</a>
-      </div>
-
     </div>
 
-    <!--Spacer-->
-    <div class="spacer">
-      &nbsp;
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.svg" alt="Logo" width="45px" display="inline"></a>
+      <h1>Toronto Cupcake</h1>
+      <a href="cart.html"><img src="images/cart.svg" alt="cart" width="30px" align="right"></a>
     </div>
 
 
-  </body>
+    <div class="menu-bar">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">About
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="index.html#about-us">About Us</a>
+          <a href="faq.html">FAQs</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Cupcakes
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="cupcakes.html">Always Available</a>
+          <a href="custom.html">Custom</a>
+          <a href="events.html">Event</a>
+        </div>
+      </div>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+
+  </div>
+
+  <!--Spacer-->
+  <div class="spacer">
+    &nbsp;
+  </div>
+
+  <h1>Ordering</h1>
+  </div>
+  <button class="accordion">How much time needed for a custom order?</button>
+
+  <div class="panel">
+    <p>It would be very helpful if you could give a minimum of 48 hours notice when ordering something special.  For personalised stamping such as initials or logos <a href="contact-us.html">please call or email us</a>.</p>
+  </div>
+
+  <button class="accordion">What is the smallest order I can make?</button>
+  <div class="panel">
+    <p>Minimum order is 1/2 dozen assorted cupcakes.</p>
+  </div>
+
+  <button class="accordion">What are my options for payment?</button>
+  <div class="panel">
+    <p>We will accept cheque, money orders, all major credit cards, and paypal.  We can also accept payment via email interac transaction (Canada only).</p>
+  </div>
+
+  <button class="accordion">When and how do I pay?</button>
+  <div class="panel">
+    <p>Payment is due when you receive your invoice via email.  After you have successfully completed an order you will receive an order confirmation email from Toronto Cupcake.  Shortly afterwards you will be sent an invoice that can be paid online.</p>
+  </div>
+
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+  <!-- <div class="small-container">
+    <div class="row">
+      <div class="col-4">
+        <h4>Ordering</h4>
+        <ul>
+          <li>How much time for a custom order?</li>
+          <li>What is the smallest order I can make?</li>
+          <li>What are my options for payment?</li>
+          <li>When and how do I pay?</li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="row">
+
+    </div>
+    <div class="row">
+
+    </div>
+    <div class="row">
+
+    </div>
+  </div> -->
+
+</body>
+
 </html>

@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>TEMPLATE</title>
+  <title>Covid-19 Information - Toronto Cupcake</title>
+  <link rel="stylesheet" href="css/styles.css">
   <style media="screen">
     /*******************NEW CSS************************/
     .title {
@@ -14,12 +15,13 @@
     }
 
     .title-content {
-      background: pink;
+      background: #FF7171;
       padding: 0px;
       max-width: 100%;
-      margin: 0 auto;
+      margin: 10px auto;
       display: flex;
       align-items: flex-start;
+      border-radius: 10px;
     }
 
     .title-text {
@@ -28,119 +30,17 @@
     }
 
     .covid-info {
-      padding: 20px;
+      background: #F0E4D7;
+      padding: 20px 40px;
+      margin: 0 auto 10px auto;
+      border-radius: 10px;
     }
+    .covid-info-content li {
+      margin-bottom: 10px;
+    }
+
 
     /*******************NEW CSS************************/
-
-
-    .header {
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 100%;
-      z-index: 1;
-    }
-
-    .banner {
-      background: #FF7171;
-    }
-
-    .banner-text {
-      flex-grow: 1;
-      line-height: 1.4;
-      text-align: left;
-    }
-
-    .logo {
-      padding: 15px;
-      background-color: #F0E4D7;
-    }
-
-    .logo h1 {
-      display: inline;
-      margin-left: 30px;
-      vertical-align: middle;
-    }
-
-    .logo a img {
-      align: right;
-    }
-
-    .menu-bar {
-      overflow: hidden;
-      background-color: #F5C0C0;
-    }
-
-    .menu-bar a {
-      float: left;
-      font-size: 16px;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    .spacer {
-      width: 100%;
-      height: 55px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    img {
-      vertical-align: middle;
-    }
-
-    .dropdown {
-      float: left;
-      overflow: hidden;
-    }
-
-    .dropdown .dropbtn {
-      font-size: 16px;
-      border: none;
-      outline: none;
-      color: black;
-      padding: 14px 16px;
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
-    }
-
-    .menu-bar a:hover,
-    .dropdown:hover .dropbtn {
-      background-color: #FF7171;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #F0E4D7;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      z-index: 1;
-    }
-
-    .dropdown-content a {
-      float: none;
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #F5C0C0;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
   </style>
 </head>
 
@@ -164,7 +64,7 @@
     </div>
 
     <div class="logo">
-      <img src="images/logo.svg" alt="Logo" width="45px" display="inline">
+      <a href="index.html"><img src="images/logo.svg" alt="Logo" width="45px" display="inline"></a>
       <h1>Toronto Cupcake</h1>
       <a href="cart.html"><img src="images/cart.svg" alt="cart" width="30px" align="right"></a>
     </div>
@@ -177,7 +77,7 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="about-us.html">About Us</a>
+          <a href="index.html#about-us">About Us</a>
           <a href="faq.html">FAQs</a>
         </div>
       </div>
@@ -211,15 +111,21 @@
       </div>
     </div>
     <div class="covid-info">
-      <p>We are open for business and with the following protocols in place we are able to supply you with all the essential cupcakes you need!</p>
-      <ul>
-        <li style="text-align: left">24 hour online ordering. </li>
-        <li style="text-align: left">Order anytime before 5PM and we will 'No contact' deliver for you the following day. We are not able to process same day orders for the foreseeable future.</li>
-        <li style="text-align: left">At this time pick up is not available. We are providing "no contact" delivery for all orders. </li>
-      </ul>
+      <div class="covid-info-content">
+        <h3>We are open for business and with the following protocols in place we are able to supply you with all the essential cupcakes you need!</h3>
+        <ul>
+          <li style="text-align: left">24 hour online ordering. </li>
+          <li style="text-align: left">Order anytime before 5PM and we will 'No contact' deliver for you the following day. We are not able to process same day orders for the foreseeable future.</li>
+          <li style="text-align: left">At this time pick up is not available. We are providing "no contact" delivery for all orders. </li>
+        </ul>
+        <h3><center>
+          Please Get Vaccinated! &#128522;
+        </center></h3>
+      </div>
     </div>
   </div>
 
+<!---FOOTER------------->
 
 </body>
 
