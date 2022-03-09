@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>TEMPLATE</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style media="screen">
+    .spacer {
+      height: 155px;
+    }
+
+    .cart-page {
+      margin: 80px auto;
+    }
+
+    .small-container table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .cart-info {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .small-container th {
+      text-align: left;
+      padding: 5px;
+      color: #fff;
+      background: #ff523b;
+      font-weight: normal;
+    }
+
+    .small-container td {
+      padding: 10px 5px;
+    }
+
+    .small-container td input {
+      width: 40px;
+      height: 30px;
+      padding: 5px;
+    }
+
+    .small-container td a {
+      color: #ff523b;
+      font-size: 12px;
+    }
+
+    .small-container td img {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+    }
+
+    .total-price {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .total-price table {
+      border-top: 3px solid #ff523b;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .small-container td:last-child {
+      text-align: right;
+    }
+
+    .small-container th:last-child {
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+  <!--Header-->
+  <!--COVID-19 Banner, Logo and Website Title, Menu Bar-->
+  <div class="header">
+    <div class="banner">
+      <div class="banner-text">
+        <table cellspacing="10px">
+          <tr>
+            <td><img src="images/warning-sign.svg" alt="warning-sign" width="20px"></td>
+            <td>
+              <div style="text-align: left">
+                <a href="covid.html"><strong> COVID-19 PROTOCOLS AND INFORMATION</strong></a>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.svg" alt="Logo" width="45px" display="inline"></a>
+      <h1>Toronto Cupcake</h1>
+      <a href="cart.html"><img src="images/cart.svg" alt="cart" width="30px" align="right"></a>
+    </div>
+
+
+    <div class="menu-bar">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">About
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="index.html#about-us">About Us</a>
+          <a href="faq.html">FAQs</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Cupcakes
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="cupcakes.html">Always Available</a>
+          <a href="custom.html">Custom</a>
+          <a href="events.html">Event</a>
+        </div>
+      </div>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+
+  </div>
+
+  <!--Spacer-->
+  <div class="spacer">
+    &nbsp;
+  </div>
+
+  <!----CART ITEM DETAILS--------------->
+  <div class="small-container cart-page">
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/buy-1.jpg" alt="">
+            <div>
+              <p>Product Name</p>
+              <small>Price: $50.00</small><br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$50.00</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/buy-1.jpg" alt="">
+            <div>
+              <p>Product Name</p>
+              <small>Price: $50.00</small><br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$50.00</td>
+      </tr>
+    </table>
+    <div class="total-price">
+      <table>
+        <tr>
+          <td>Subtotal</td>
+          <td>$200.00</td>
+        </tr>
+        <tr>
+          <td>Tax</td>
+          <td>$20.00</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>$220.00</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
